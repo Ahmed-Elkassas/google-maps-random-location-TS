@@ -5,7 +5,7 @@ export class Company {
     catchPhrase: string;
     location: {
         lat: number,
-        lug: number
+        lng: number
     }
 
     constructor() {
@@ -13,7 +13,7 @@ export class Company {
         this.catchPhrase = randBrand();
         this.location = {
             lat: randLatitude(),
-            lug: randLongitude()
+            lng: randLongitude()
         }
     }
 }
