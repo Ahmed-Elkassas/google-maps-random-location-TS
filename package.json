@@ -11,10 +11,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@types/faker": "^5.5.9",
-    "faker": "^5.5.3"
+    "@ngneat/falso": "^6.1.0"
   },
-   "devDependencies": {
+  "devDependencies": {
     "parcel": "^2.8.0",
     "typescript": "^4.8.4"
   }
