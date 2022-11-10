@@ -1,8 +1,12 @@
-import { Company } from './Company';
-import { User } from "./User";
+/// <reference types="@types/google.maps" />
 
 
-const user = new User();
-const company = new Company()
-
-console.log(company)
+// !  because of this Error => Argument of type 'HTMLElement | null' is not assignable to parameter of type 'HTMLElement'.
+ //  Type 'null' is not assignable to type 'HTMLElement'
+new google.maps.Map(document.getElementById('maps')!, {
+    zoom: 1,
+   center:  {
+    lat: 0,
+     lng: 0
+}
+})
