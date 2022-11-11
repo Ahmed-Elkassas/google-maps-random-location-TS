@@ -8,5 +8,5 @@ const map = new CustomMaps('maps')
 const randomUser = new User();
 const randomComany = new Company()
 
-map.addUserMarker(randomUser);
-map.addCompanyMarker(randomComany)
+map.addMarker(randomUser);
+map.addMarker(randomComany)
