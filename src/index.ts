@@ -1,12 +1,12 @@
-/// <reference types="@types/google.maps" />
+import { Company } from './Company';
+import { User } from './User';
+import { CustomMaps } from "./CustomMap";
 
 
-// !  because of this Error => Argument of type 'HTMLElement | null' is not assignable to parameter of type 'HTMLElement'.
- //  Type 'null' is not assignable to type 'HTMLElement'
-new google.maps.Map(document.getElementById('maps')!, {
-    zoom: 1,
-   center:  {
-    lat: 0,
-     lng: 0
-}
-})
+const map = new CustomMaps('maps')
+
+const randomUser = new User();
+const randomComany = new Company()
+
+map.addMarker(randomUser);
+map.addMarker(randomComany)
